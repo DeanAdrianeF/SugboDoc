@@ -1,0 +1,199 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainPage.master.cs" Inherits="ELDNET_ClinicSystem.MainPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Dappy's & Eli's General Hospital</title>
+    <style type="text/css">        
+        .auto-style1 {
+            height: 619px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .auto-style2 {
+            background-color: #48e5a4;
+            text-align: right;
+            height: 60px;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-right: 150px;
+        }
+
+        .navigation {
+            background-color: #48e5a4;
+        }
+
+        #Button1 {
+            height: 40px;
+            width: 130px;
+            background-color: #48e5a4;
+            cursor: pointer;
+        }
+
+            #Button1:hover {
+                color: white;
+                background-color: #21835a;
+                transition-duration: 0.1s;
+            }
+
+        #Button2 {
+            height: 40px;
+            width: 130px;
+            background-color: #48e5a4;
+            cursor: pointer;
+        }
+
+            #Button2:hover {
+                color: white;
+                background-color: #21835a;
+                transition-duration: 0.1s;
+            }
+
+        #Button3 {
+            height: 40px;
+            width: 130px;
+            background-color: #48e5a4;
+            cursor: pointer;
+        }
+
+            #Button3:hover {
+                color: white;
+                background-color: #21835a;
+                transition-duration: 0.1s;
+            }
+
+        #Button4 {
+            height: 40px;
+            width: 130px;
+            background-color: #48e5a4;
+            cursor: pointer;
+        }
+
+            #Button4:hover {
+                color: white;
+                background-color: #21835a;
+                transition-duration: 0.1s;
+            }
+
+        #Button5 {
+            height: 40px;
+            width: 130px;
+            background-color: #48e5a4;
+            cursor: pointer;
+        }
+
+            #Button5:hover {
+                color: white;
+                background-color: #21835a;
+                transition-duration: 0.1s;
+            }
+
+        #Button6 {
+            color: #48e5a4;
+            height: 40px;
+            width: 368px;
+            background-color: #48e5a4;
+        }
+        #Button7 {
+            height: 40px;
+            width: 130px;
+            background-color: #ef90b9;
+            cursor: pointer;
+            border:#ef90b9;
+        }
+
+            #Button7:hover {
+                border: 3px solid #ef90b9;
+                background-color: white;
+                border-radius: 25px;
+                transition-duration: 0.3s;
+            }
+
+        #Button8 {
+            height: 40px;
+            width: 130px;
+            background-color: #48e5a4;
+            cursor: pointer;
+            border:#ef90b9;
+        }
+
+            #Button8:hover {
+                border: 3px solid #ef90b9;
+                background-color: white;
+                border-radius: 25px;
+                transition-duration: 0.3s;
+            }
+
+        #Button9 {
+            background-color: #48e5a4;
+            cursor: pointer;
+        }
+            #Button9:hover {
+                color: white;
+                background-color: #21835a;
+                transition-duration: 0.1s;
+            }
+
+        .auto-style3 {
+            height: 500px;
+            text-align: center;
+            background-color: #a4cebd;
+        }
+
+        .auto-style4 {
+            background-color: #48e5a4;
+            text-align: center;
+            height: 10px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+        <tr>
+            <td class="auto-style2">
+               <asp:ContentPlaceHolder ID="ContentPlaceHeader" runat="server">
+                    <h1>HEADER</h1>
+               </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="navigation">
+                <asp:Button ID="Button1" runat="server" Text="HOME" BorderStyle="None" OnClick="Button1_Click" OnClientClick="HomePage.aspx" />
+                <asp:Button ID="Button2" runat="server" Text="CONSULTATION" BorderStyle="None" OnClick="Button2_Click" OnClientClick="CosunltationPage.aspx" />
+                <asp:Button ID="Button3" runat="server" Text="IMMUNIZATION" BorderStyle="None" OnClick="Button3_Click" OnClientClick="ImmunizationPage.aspx" />
+                <asp:Button ID="Button4" runat="server" Text="ABOUT US" BorderStyle="None" OnClick="Button4_Click" OnClientClick="AboutUs.aspx" />
+                <asp:Button ID="Button5" runat="server" Text="CONTACT US" BorderStyle="None" OnClick="Button5_Click" OnClientClick="ContactUs.aspx" />
+                <asp:Button ID="Button9" runat="server" BorderStyle="None" Height="40px" Text="CHECK OUT" Width="130px" OnClick="Button9_Click" OnClientClick="CheckOutMenu.aspx" />
+                <asp:Button ID="Button6" runat="server" Text="~" BorderStyle="None" Enabled="False" Width="228px"/>
+                <asp:Button ID="Button8" runat="server" Text="Exit" OnClick="Button8_Click" OnClientClick="Login.aspx"/>
+                <asp:Button ID="Button7" runat="server" Height="40px" Text="Register" Width="130px" OnClick="Button7_Click1" BorderStyle="Solid" OnClientClick="PatientPage.aspx" />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                <asp:ContentPlaceHolder ID="ContentPlaceContent" runat="server">
+                    CONTENT
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style4">
+               <asp:ContentPlaceHolder ID="ContentPlaceFooter" runat="server">
+                   <h6>FOOTER</h6>
+               </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
